@@ -4,7 +4,7 @@
 cd /research/labs/neurology/fryer/projects/aducanumab/2024_bulkRNA/
 
 # create file with list of R1 samples
-awk '{print $2}' MD5.txt | grep _1. > R1_samples.txt
+awk '{print $2}' MD5.txt | grep _1.fq.gz > R1_samples.txt
 
 # loops through list and collect header information
 touch sample_read_info.txt
