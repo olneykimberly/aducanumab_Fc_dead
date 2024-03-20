@@ -1,0 +1,101 @@
+{
+    "Commment_Input_Output_Directories": "This section specifies the input and output directories for scripts",
+    "counts_dir" : "../counts/", 
+    "rawReads" : "/research/labs/neurology/fryer/projects/aducanumab/2024_bulkRNA/01.RawData/",
+    "rawQC" : "../rawQC/",
+    "trimmedReads" : "../trimmedReads/",
+    "trimmedQC" : "../trimmedQC/",
+    "starAligned" : "../starAligned/",
+    "bamstats" : "../bamstats/",
+    "multiQC_raw_report" : "../rawQC/multiqc_report.html",
+    "multiQC_trimmed_report" : "../trimmedQC/multiqc_report.html",
+
+    "Comment_Reference" : "This section specifies the location of the mouse , Ensembl reference genome",
+    "Mmusculus_dir" : "/research/labs/neurology/fryer/projects/references/mouse/refdata-gex-mm10-2020-A/",
+    "Mmusculus_gtf" : "/research/labs/neurology/fryer/projects/references/mouse/refdata-gex-mm10-2020-A/genes.gtf",
+
+    "Comment_Sample_Info": "The following section lists the samples that are to be analyzed",
+    "sample_names": ['I_15', 'I_29', 'F_34', 'I_36', 'F_4', 'A_42', 'F_37', 'A_17', 'A_14'],
+    "read": ['1', '2'],
+
+    "I_15":{
+        "fq1": "I_15/I_15_1",
+        "fq2": "I_15/I_15_2",
+        "ID": "I_15",
+        "SM": "I_15",
+        "PU": "H5T7HDSXC",
+        "PL": "Illumina"
+        },
+
+    "I_29":{
+        "fq1": "I_29/I_29_1",
+        "fq2": "I_29/I_29_2",
+        "ID": "I_29",
+        "SM": "I_29",
+        "PU": "H5WFVDSXC",
+        "PL": "Illumina"
+        },
+
+    "F_34":{
+        "fq1": "F_34/F_34_1",
+        "fq2": "F_34/F_34_2",
+        "ID": "F_34",
+        "SM": "F_34",
+        "PU": "H5T7HDSXC",
+        "PL": "Illumina"
+        },
+
+    "I_36":{
+        "fq1": "I_36/I_36_1",
+        "fq2": "I_36/I_36_2",
+        "ID": "I_36",
+        "SM": "I_36",
+        "PU": "H5WFVDSXC",
+        "PL": "Illumina"
+        },
+
+    "F_4":{
+        "fq1": "F_4/F_4_1",
+        "fq2": "F_4/F_4_2",
+        "ID": "F_4",
+        "SM": "F_4",
+        "PU": "H5WFVDSXC",
+        "PL": "Illumina"
+        },
+
+    "A_42":{
+        "fq1": "A_42/A_42_1",
+        "fq2": "A_42/A_42_2",
+        "ID": "A_42",
+        "SM": "A_42",
+        "PU": "H5WFVDSXC",
+        "PL": "Illumina"
+        },
+
+    "F_37":{
+        "fq1": "F_37/F_37_1",
+        "fq2": "F_37/F_37_2",
+        "ID": "F_37",
+        "SM": "F_37",
+        "PU": "H5T7HDSXC",
+        "PL": "Illumina"
+        },
+
+    "A_17":{
+        "fq1": "A_17/A_17_1",
+        "fq2": "A_17/A_17_2",
+        "ID": "A_17",
+        "SM": "A_17",
+        "PU": "H5WFVDSXC",
+        "PL": "Illumina"
+        },
+
+    "A_14":{
+        "fq1": "A_14/A_14_1",
+        "fq2": "A_14/A_14_2",
+        "ID": "A_14",
+        "SM": "A_14",
+        "PU": "H5WFVDSXC",
+        "PL": "Illumina"
+        }
+}
