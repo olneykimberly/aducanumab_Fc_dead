@@ -1,12 +1,12 @@
 #!/bin/bash
 #SBATCH --job-name=adu_snake                         
-#SBATCH --partition=cpu-med
+#SBATCH --partition=cpu-short
 ##SBATCH -p lg-mem
-#SBATCH --nodes=1                                     
-#SBATCH --tasks=32                                      
-#SBATCH --time=22:00:00 # 8 hours                                
-#SBATCH --mem=40G
-#SBATCH -n 10 # threaded 
+##SBATCH --nodes=1                                     
+##SBATCH --tasks=32                                      
+#SBATCH --time=08:00:00 # 8 hours                                
+#SBATCH --mem=5G
+##SBATCH -n 10 # threaded 
 #SBATCH -o slurm.adu_snake.out
 #SBATCH -e slurm.adu_snake.err
 #SBATCH --mail-user=olney.kimberly@mayo.edu
@@ -24,4 +24,4 @@ conda activate adu_env
 #python 02_create_config.py
 
 # 3) run snakemake - metaphlan alignment 
-snakemake -s Snakefile -j 15 --nolock --latency-wait 15 --rerun-incomplete --cluster "sbatch --ntasks 8 --partition=cpu-med --nodes 1 --mem=40G -t 16:00:00"
+snakemake -s Snakefile -j 20 --nolock --latency-wait 15 --rerun-incomplete --cluster "sbatch --ntasks 20 --partition=cpu-short --mem=35G -t 04:00:00"

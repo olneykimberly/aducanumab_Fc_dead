@@ -27,12 +27,13 @@ header = '''{{
     "trimmedQC" : "../trimmedQC/",
     "starAligned" : "../starAligned/",
     "bamstats" : "../bamstats/",
-    "multiQC_raw_report" : "../rawQC/multiqc_report.html",
-    "multiQC_trimmed_report" : "../trimmedQC/multiqc_report.html",
+    "multiQC_raw_report" : "../rawQC/multiqc_report",
+    "multiQC_trimmed_report" : "../trimmedQC/multiqc_report",
 
     "Comment_Reference" : "This section specifies the location of the mouse , Ensembl reference genome",
-    "Mmusculus_dir" : "/research/labs/neurology/fryer/projects/references/mouse/refdata-gex-mm10-2020-A/",
-    "Mmusculus_gtf" : "/research/labs/neurology/fryer/projects/references/mouse/refdata-gex-mm10-2020-A/genes.gtf",
+    "Mmusculus_dir" : "/research/labs/neurology/fryer/projects/references/mouse/refdata-gex-mm10-2020-A_star_2.7.4/",
+    "Mmusculus_gtf" : "/research/labs/neurology/fryer/projects/references/mouse/refdata-gex-mm10-2020-A/genes/genes.gtf",
+    "Mmusculus_fa" : "/research/labs/neurology/fryer/projects/references/mouse/refdata-gex-mm10-2020-A/fasta/genome.fa",
 
     "Comment_Sample_Info": "The following section lists the samples that are to be analyzed",
     "sample_names": {0},
